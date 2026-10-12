@@ -17,7 +17,7 @@ time and exchange information only through files in a shared run directory.
 
 ### Theorist agent
 
-The Theorist reads the current champion, the dead-end log and the experiment log. It then:
+The Theorist reads the current champion algorithm, the dead-end log and the experiment log. It then:
 
 - **Proposes** one new objective function. For each term, it states where the term comes from,
   which term balances it, and the value of any new coefficient.
