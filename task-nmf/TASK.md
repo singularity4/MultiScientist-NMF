@@ -58,7 +58,7 @@ were made, and each of these choices could have been made differently.
 ## What is being asked
 
 Propose an objective function that satisfies the theoretical criteria and gives
-higher clustering accuracy than the champion on the data sets declared above.
+higher clustering accuracy than the champion on the datasets declared above.
 
 The task does not restrict which part of the objective may be changed. Only the
 framework and the evaluation are fixed.
