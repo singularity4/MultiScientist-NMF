@@ -1,0 +1,21 @@
+{
+  "name": "KNSC-Rcut",
+  "module": "champion/algorithm.py",
+  "objective": "min_{H,F >= 0} alpha * ||Phi(X) - Phi(X) F H||_F^2 + mu * ||H H' - I||_F^2",
+  "derivation": {
+    "kernel_trick": "W is restricted to the column space of Phi(X), W = Phi(X) F, so every quadratic term reduces to K = Phi'(X) Phi(X) and the feature map never appears explicitly.",
+    "lagrangian": "L = alpha Tr[Phi Phi'] - 2 alpha Tr[Phi F H Phi'] + alpha Tr[Phi F H H' F' Phi'] + mu ||H H' - I||_F^2",
+    "gradients": {
+      "H": "dL/dH = -2 alpha F'K + 2 alpha F'KFH + 4 mu H(H'H - I)",
+      "F": "dL/dF = -2 alpha K H' + 2 alpha K F H H'"
+    },
+    "kkt": "psi_ij H_ij = 0 and xi_jl F_jl = 0 for the non-negativity multipliers; separating the positive and negative parts of each gradient gives the multiplicative rules.",
+    "rules": {
+      "H": "H <- H .* (alpha F'K + 2 mu H) ./ (alpha F'KFH + 2 mu HH'H)",
+      "F": "F <- F .* (K H') ./ (K F H H')"
+    },
+    "convergence": "Monotonic decrease is proved with an auxiliary function."
+  },
+  "coefficients": {},
+  "also_available": "champion/algorithm.py also defines update_ncut and objective_ncut, the normalized-cut form, which differs only by the scaling D^(-1/2). UPDATE and OBJECTIVE bind to the ratio-cut form."
+}
