@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" width="1800" height="1000" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="champ" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A2378"/><stop offset="100%" stop-color="#5734A8"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5B3BC4"/></marker>
+    <marker id="arrowSm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A995E0"/></marker>
+  </defs>
+  <rect width="1800" height="1000" fill="#FAF8F4"/>
+
+  <text x="60" y="72" font-size="47" font-weight="700" fill="#171223" letter-spacing="-1">MultiScientist-NMF</text>
+  <text x="60" y="116" font-size="23" fill="#6B6478">Multi-agent LLM team for algorithm discovery in nonlinear orthogonal non-negative matrix factorization.</text>
+
+  <rect x="60" y="200" width="290" height="330" rx="18" fill="#FFFFFF" stroke="#E8E3DC" stroke-width="1.5"/>
+  <text x="90" y="243" font-size="15" font-weight="700" fill="#6B4BD6" letter-spacing="1.6">THE SETUP</text>
+  <g stroke="#3E2A8C" stroke-width="3.4" fill="none" stroke-linecap="round">
+    <path d="M126 285 h64 l22 22 v76 h-86 z"/><path d="M190 285 v22 h22"/>
+    <path d="M146 337 h44 M146 355 h44 M146 373 h26"/>
+  </g>
+  <text x="90" y="435" font-size="27" font-weight="700" fill="#171223">The task</text>
+  <text x="90" y="468" font-size="16" fill="#6B6478">
+    <tspan x="90" dy="0">The data sets, the metric</tspan>
+    <tspan x="90" dy="23">and the protocol, fixed</tspan>
+    <tspan x="90" dy="23">by the scientist</tspan>
+  </text>
+
+  <line x1="368" y1="365" x2="400" y2="365" stroke="#5B3BC4" stroke-width="7" marker-end="url(#arrow)"/>
+
+  <rect x="418" y="200" width="395" height="330" rx="18" fill="#FFFFFF" stroke="#E8E3DC" stroke-width="1.5"/>
+  <text x="448" y="243" font-size="15" font-weight="700" fill="#6B4BD6" letter-spacing="1.6">1 — PROPOSE</text>
+  <g stroke="#3E2A8C" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M601 344 a 24 24 0 1 1 28 0 c -4 4 -5 8 -5 12 h -18 c 0 -4 -1 -8 -5 -12 z"/>
+    <path d="M606 366 h18 M609 377 h12"/>
+  </g>
+  <text x="448" y="435" font-size="27" font-weight="700" fill="#171223">Theorist Agent</text>
+  <text x="448" y="468" font-size="16" fill="#6B6478">
+    <tspan x="448" dy="0">Proposes one objective function</tspan>
+    <tspan x="448" dy="23">and searches the literature</tspan>
+    <tspan x="448" dy="23">for whether it is new</tspan>
+  </text>
+
+  <line x1="831" y1="365" x2="863" y2="365" stroke="#5B3BC4" stroke-width="7" marker-end="url(#arrow)"/>
+
+  <rect x="881" y="200" width="395" height="330" rx="18" fill="#FFFFFF" stroke="#E8E3DC" stroke-width="1.5"/>
+  <text x="911" y="243" font-size="15" font-weight="700" fill="#6B4BD6" letter-spacing="1.6">2 — DERIVE</text>
+  <g stroke="#3E2A8C" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1102 296 h-48 l26 36 l-26 36 h48"/>
+  </g>
+  <text x="911" y="435" font-size="27" font-weight="700" fill="#171223">Analyst Agent</text>
+  <text x="911" y="468" font-size="16" fill="#6B6478">
+    <tspan x="911" dy="0">Derives the multiplicative</tspan>
+    <tspan x="911" dy="23">update rules, or shows that</tspan>
+    <tspan x="911" dy="23">none exist</tspan>
+  </text>
+
+  <line x1="1294" y1="365" x2="1326" y2="365" stroke="#5B3BC4" stroke-width="7" marker-end="url(#arrow)"/>
+
+  <rect x="1344" y="200" width="396" height="330" rx="18" fill="#FFFFFF" stroke="#E8E3DC" stroke-width="1.5"/>
+  <text x="1374" y="243" font-size="15" font-weight="700" fill="#6B4BD6" letter-spacing="1.6">3 — IMPLEMENT AND TEST</text>
+  <g stroke="#3E2A8C" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1514 306 l-26 26 l26 26 M1570 306 l26 26 l-26 26 M1553 296 l-22 72"/>
+  </g>
+  <text x="1374" y="435" font-size="27" font-weight="700" fill="#171223">Evaluator Agent</text>
+  <text x="1374" y="468" font-size="16" fill="#6B6478">
+    <tspan x="1374" dy="0">Implements the rules as written</tspan>
+    <tspan x="1374" dy="23">and runs them against the</tspan>
+    <tspan x="1374" dy="23">champion on paired seeds</tspan>
+  </text>
+
+  <line x1="1450" y1="556" x2="1450" y2="588" stroke="#5B3BC4" stroke-width="7" marker-end="url(#arrow)"/>
+
+  <rect x="1060" y="614" width="544" height="176" rx="18" fill="url(#champ)"/>
+  <g stroke="#FFFFFF" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1094" y="671" width="62" height="62" rx="9"/><path d="M1109 702 l13 13 l20 -26"/></g>
+  <text x="1570" y="659" font-size="15" font-weight="700" fill="#C3B2F0" text-anchor="end" letter-spacing="1.6">THE RESULT</text>
+  <text x="1570" y="700" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="end">New algorithm champion</text>
+  <text x="1570" y="729" font-size="16" fill="#BFAEEC" text-anchor="end">Promoted only if every criterion holds</text>
+  <text x="1570" y="753" font-size="16" fill="#BFAEEC" text-anchor="end">and the improvement is significant</text>
+
+  <g stroke="#B9A9E8" stroke-width="2.6" stroke-dasharray="7 8" fill="none">
+    <path d="M560 548 V 826" marker-end="url(#arrowSm)"/>
+    <path d="M960 548 V 826" marker-end="url(#arrowSm)"/>
+    <path d="M1160 796 V 826" marker-end="url(#arrowSm)"/>
+  </g>
+
+  <rect x="60" y="838" width="1200" height="118" rx="18" fill="#FFFFFF" stroke="#E8E3DC" stroke-width="1.5"/>
+  <text x="92" y="880" font-size="15" font-weight="700" fill="#6B4BD6" letter-spacing="1.6">SHARED MULTI-AGENT STATE</text>
+  <text x="92" y="915" font-size="18" font-weight="700" fill="#171223">The run directory</text>
+  <g stroke="#E8E3DC" stroke-width="1.5">
+    <line x1="392" y1="866" x2="392" y2="928"/><line x1="537" y1="866" x2="537" y2="928"/>
+    <line x1="682" y1="866" x2="682" y2="928"/><line x1="827" y1="866" x2="827" y2="928"/>
+    <line x1="972" y1="866" x2="972" y2="928"/><line x1="1117" y1="866" x2="1117" y2="928"/>
+  </g>
+  <g font-size="17" font-weight="700" fill="#2A2338">
+    <text x="414" y="905">Proposals</text><text x="559" y="905">Derivations</text>
+    <text x="704" y="905">Experiments</text><text x="849" y="905">Dead ends</text>
+    <text x="994" y="905">Champion</text><text x="1139" y="905">Activity</text>
+  </g>
+
+  <path d="M1268 897 H 1324" fill="none" stroke="#5B3BC4" stroke-width="3.6" marker-end="url(#arrow)"/>
+  <path d="M1500 796 V 830" fill="none" stroke="#B9A9E8" stroke-width="2.6" stroke-dasharray="7 8" marker-end="url(#arrowSm)"/>
+
+  <rect x="1340" y="838" width="400" height="118" rx="18" fill="#F0EBFB" stroke="#DDD3F5" stroke-width="1.5"/>
+  <g transform="translate(1394,897)" stroke="#3E2A8C" stroke-width="3.2" fill="none" stroke-linecap="round">
+    <path d="M-26 0 C -14 -17, 14 -17, 26 0 C 14 17, -14 17, -26 0 z"/><circle cx="0" cy="0" r="7.5"/></g>
+  <text x="1440" y="884" font-size="25" font-weight="700" fill="#171223">Observer Agent</text>
+  <text x="1440" y="912" font-size="16" fill="#6B6478">Audits each agent's role</text>
+  <text x="1440" y="936" font-size="15" fill="#8B8399">Reads the logs without taking part</text>
+
+</svg>
